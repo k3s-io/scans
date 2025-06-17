@@ -24,7 +24,7 @@ td { padding: 7px; }
 </style>
 </head>
 <body>
-<h1>K3s v1.32.5 - CVE Scans - 2025-06-13</h1>
+<h1>K3s v1.32.5 - CVE Scans - 2025-06-17</h1>
 
 <h3>How to use this page</h3>
 
@@ -72,6 +72,28 @@ to its severity.</li>
 <th onclick="sort(6)">Status</th>
 <th onclick="sort(7)">Justification (for status not affected)</th>
 <th onclick="sort(8)">Type (language or OS)</th>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-helm:v0.9.5-build20250306</td>
+<td>K3s v1.32.5</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>stdlib@v1.24.1</td>
+<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22874">CVE-2025-22874</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>gobinary</td>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-helm:v0.9.5-build20250306</td>
+<td>K3s v1.32.5</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
+<td>stdlib@v1.24.1</td>
+<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22874">CVE-2025-22874</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>gobinary</td>
 </tr>
 
 <tr class="issue not_affected">
