@@ -23,74 +23,113 @@ td { padding: 7px; }
 .cve_sev .cve_sev_note::after { content: " "; position: absolute; top: 100%; left: 50%; margin-left: -8px; border-width: 8px; border-style: solid; border-color: black transparent transparent transparent; }
 </style>
 </head>
-<body class="index">
-<h1>K3s - CVE Scans - 2025-06-25</h1>
+<body>
+<h1>K3s v1.33.2-rc1 - CVE Scans - 2025-06-25</h1>
 
-<h2>How to use this page</h2>
+<h3>How to use this page</h3>
 
 <ul>
-<li>Only the latest patch version of each supported release line and the
-respective next release candidate (RC) versions are scanned. Older patch
-versions and no longer supported (EOL) versions are not scanned.</li>
-<li>The CVE scans are executed daily with internal automation developed by the
-K3s team. The CVE scanner used is Trivy with the latest version available.</li>
-<li>These pages are updated and regenerated daily.</li>
-<li>Our scans use <a href="https://github.com/rancher/vexhub/">SUSE Rancher's
-VEX Hub</a> reports to remove known false-positives. Please consult the <a
-href="https://github.com/k3s-io/scans">README</a> for more information on how to use the
-reports.</li>
-<li>Only critical and high severity CVEs are displayed (internally we track all
-severities).</li>
-<li>If you want to report an issue with these pages, please open an <a
-href="https://github.com/k3s-io/scans/issues">issue</a>.</li>
+<li>You can click a column header to sort by column.</li>
+<li>Use the search bar below to filter the results by image (and version/tag),
+release, affected binary, vulnerable dependency (and its version), vulnerability
+ID (CVE, GHSA, SUSE-SU etc.), severity, status (if affected or not
+affected/false-positive), justification (for false-positives), vulnerability
+type (related to the programming language or container OS).</li>
+<li>The search functionality might execute a bit slow depending on the number of
+vulnerabilities displayed in the page.</li>
+<li>False-positive CVEs that are removed with VEX have the status as "not
+affected" with the severity set to "none", because they do not affect the
+binary/package/image. The justification explains why they are false-positives,
+according to the VEX statuses as explained the <a
+href="https://github.com/k3s-io/scans">README</a>.</li>
+<li>For further information about scanned versions, scanning frequency, tooling
+and false-positives, please consult the <a href="index.html">main
+instructions</a>.</li>
+<li>The severity (CVSS rating) of some CVEs in the portal might differ from the
+original severity reported by some vendors and security scanners. This happens,
+because the K3s team recalculates the CVSS rating based on <a
+href="https://www.suse.com/security/cve/">SUSE's CVE database</a> and according
+to criteria, like: applicability and difficulty of the issue being exploited in
+the wild; how it can actually affect the confidentiality, integrity and
+availability of a K3s cluster etc. CVEs that had their CVSS severity rating
+changed, either decreased or increased, will have the distinctive tag '*' close
+to its severity.</li>
 </ul>
 
-<table>
+<div>
+<p><b>Search:</b> <input type="text" id="searchBar" onkeyup="search()" placeholder="Search for any table field"></p>
+<p style="display:none;" id="search_count"></p>
+</div>
+
+<table id="cves_table">
 <tr>
-<th>CVE results</th>
-<th>Raw CSV report</th>
-<th>Raw CSV summary per image</th>
+<th onclick="sort(0)">Image</th>
+<th onclick="sort(1)">Release</th>
+<th onclick="sort(2)">Binary/Package</th>
+<th onclick="sort(3)">Dependency</th>
+<th onclick="sort(4)">Vulnerability ID (CVE)</th>
+<th onclick="sort(5)">Severity</th>
+<th onclick="sort(6)">Status</th>
+<th onclick="sort(7)">Justification (for status not affected)</th>
+<th onclick="sort(8)">Type (language or OS)</th>
 </tr>
-<tr>
-<td><a href="k3s-v1.33.2-rc1.html">K3s v1.33.2-rc1</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.33.2-rc1-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.33.2-rc1-stats.csv">report</a></td>
+
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.33.2-rc1-k3s1</td>
+<td>K3s v1.33.2-rc1</td>
+<td>bin/k3s</td>
+<td>github.com/pion/interceptor@v0.1.37</td>
+<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-49140">CVE-2025-49140</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
 </tr>
-<tr>
-<td><a href="k3s-v1.33.1.html">K3s v1.33.1</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.33.1-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.33.1-stats.csv">report</a></td>
+<tr class="issue not_affected">
+<td>rancher/local-path-provisioner:v0.0.31</td>
+<td>K3s v1.33.2-rc1</td>
+<td>libcrypto3</td>
+<td>libcrypto3@3.3.2-r4</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2024-12797.html">CVE-2024-12797</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code cannot be controlled by adversary</td>
+<td>alpine</td>
 </tr>
-<tr>
-<td><a href="k3s-v1.32.6-rc1.html">K3s v1.32.6-rc1</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.32.6-rc1-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.32.6-rc1-stats.csv">report</a></td>
+<tr class="issue not_affected">
+<td>rancher/local-path-provisioner:v0.0.31</td>
+<td>K3s v1.33.2-rc1</td>
+<td>libssl3</td>
+<td>libssl3@3.3.2-r4</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2024-12797.html">CVE-2024-12797</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code cannot be controlled by adversary</td>
+<td>alpine</td>
 </tr>
-<tr>
-<td><a href="k3s-v1.32.5.html">K3s v1.32.5</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.32.5-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.32.5-stats.csv">report</a></td>
+<tr class="issue not_affected">
+<td>rancher/local-path-provisioner:v0.0.31</td>
+<td>K3s v1.33.2-rc1</td>
+<td>usr/bin/local-path-provisioner</td>
+<td>golang.org/x/net@v0.34.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2025-22870.html">CVE-2025-22870</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
 </tr>
-<tr>
-<td><a href="k3s-v1.31.10-rc1.html">K3s v1.31.10-rc1</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.31.10-rc1-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.31.10-rc1-stats.csv">report</a></td>
+<tr class="issue not_affected">
+<td>rancher/local-path-provisioner:v0.0.31</td>
+<td>K3s v1.33.2-rc1</td>
+<td>usr/bin/local-path-provisioner</td>
+<td>golang.org/x/net@v0.34.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2025-22872.html">CVE-2025-22872</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
 </tr>
-<tr>
-<td><a href="k3s-v1.31.9.html">K3s v1.31.9</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.31.9-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.31.9-stats.csv">report</a></td>
-</tr>
-<tr>
-<td><a href="k3s-v1.30.14-rc1.html">K3s v1.30.14-rc1</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.30.14-rc1-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.30.14-rc1-stats.csv">report</a></td>
-</tr>
-<tr>
-<td><a href="k3s-v1.30.13.html">K3s v1.30.13</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.30.13-cves.csv">report</a></td>
-<td id="center_row"><a href="csv/report-k3s-v1.30.13-stats.csv">report</a></td>
-</tr>
+
 </table>
 
 <footer>
