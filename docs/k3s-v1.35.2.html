@@ -21,10 +21,11 @@ td { padding: 7px; }
 .cve_sev:hover .cve_sev_note { visibility: visible; }
 .cve_sev .cve_sev_note { visibility: hidden; width: 150px; background-color: #000000; color: #ffffff; text-align: center; border-radius: 6px; padding: 8px 0; position: absolute; z-index: 1; bottom: 150%; left: 50%; margin-left: -70px; }
 .cve_sev .cve_sev_note::after { content: " "; position: absolute; top: 100%; left: 50%; margin-left: -8px; border-width: 8px; border-style: solid; border-color: black transparent transparent transparent; }
+
 </style>
 </head>
 <body>
-<h1>K3s v1.32.12 - CVE Scans - 2026-03-05</h1>
+<h1>K3s v1.35.2 - CVE Scans - 2026-03-06</h1>
 
 <h3>How to use this page</h3>
 
@@ -63,74 +64,52 @@ to its severity.</li>
 
 <table id="cves_table">
 <tr>
-<th onclick="sort(0)">Image</th>
-<th onclick="sort(1)">Release</th>
-<th onclick="sort(2)">Binary/Package</th>
-<th onclick="sort(3)">Dependency</th>
-<th onclick="sort(4)">Vulnerability ID (CVE)</th>
-<th onclick="sort(5)">Severity</th>
-<th onclick="sort(6)">Status</th>
-<th onclick="sort(7)">Justification (for status not affected)</th>
-<th onclick="sort(8)">Type (language or OS)</th>
+<th onclick="sort( 0 )">Image</th>
+<th onclick="sort( 1 )">Release</th>
+<th onclick="sort( 2 )">Binary/Package</th>
+<th onclick="sort( 3 )">Dependency</th>
+<th onclick="sort( 4 )">Vulnerability ID (CVE)</th>
+<th onclick="sort( 5 )">Severity</th>
+<th onclick="sort( 6 )">Status</th>
+<th onclick="sort( 7 )">Justification (for status not affected)</th>
+<th onclick="sort( 8 )">Type (language or OS)</th>
 </tr>
 <tr class="issue">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/cni</td>
-<td>stdlib@v1.24.12</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2025-68121.html">CVE-2025-68121</a></td>
-<td><div class=cve_sev>HIGH*<span class=cve_sev_note>Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
-<td>affected</td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/containerd-shim-runc-v2</td>
-<td>stdlib@v1.24.12</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2025-68121.html">CVE-2025-68121</a></td>
-<td><div class=cve_sev>HIGH*<span class=cve_sev_note>Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
-<td>affected</td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
+<td>rancher/k3s:v1.35.2-k3s1</td>
+<td>K3s v1.35.2</td>
 <td>bin/k3s</td>
-<td>stdlib@v1.24.12</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2025-68121.html">CVE-2025-68121</a></td>
-<td><div class=cve_sev>HIGH*<span class=cve_sev_note>Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
+<td>github.com/docker/cli@v28.3.2+incompatible</td>
+<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15558">CVE-2025-15558</a></td>
+<td>HIGH</td>
 <td>affected</td>
 <td></td>
 <td>gobinary</td>
 </tr>
 <tr class="issue">
 <td>rancher/klipper-helm:v0.9.14-build20260210</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/helm</td>
 <td>stdlib@v1.24.11</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-61726.html">CVE-2025-61726</a></td>
-<td><div class=cve_sev>MEDIUM*<span class=cve_sev_note>Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
+<td><div class="cve_sev">MEDIUM*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
 <td>affected</td>
 <td></td>
 <td>gobinary</td>
 </tr>
 <tr class="issue">
 <td>rancher/klipper-helm:v0.9.14-build20260210</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/helm</td>
 <td>stdlib@v1.24.11</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-61730.html">CVE-2025-61730</a></td>
-<td><div class=cve_sev>LOW*<span class=cve_sev_note>Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
+<td><div class="cve_sev">LOW*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
 <td>affected</td>
 <td></td>
 <td>gobinary</td>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>libcrypto3</td>
 <td>libcrypto3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-15467.html">CVE-2025-15467</a></td>
@@ -141,7 +120,7 @@ to its severity.</li>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>libcrypto3</td>
 <td>libcrypto3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-69419.html">CVE-2025-69419</a></td>
@@ -152,7 +131,7 @@ to its severity.</li>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>libcrypto3</td>
 <td>libcrypto3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-69421.html">CVE-2025-69421</a></td>
@@ -163,7 +142,7 @@ to its severity.</li>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>libssl3</td>
 <td>libssl3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-15467.html">CVE-2025-15467</a></td>
@@ -174,7 +153,7 @@ to its severity.</li>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>libssl3</td>
 <td>libssl3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-69419.html">CVE-2025-69419</a></td>
@@ -185,7 +164,7 @@ to its severity.</li>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>libssl3</td>
 <td>libssl3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-69421.html">CVE-2025-69421</a></td>
@@ -196,32 +175,42 @@ to its severity.</li>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/local-path-provisioner</td>
 <td>stdlib@v1.25.5</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-68121.html">CVE-2025-68121</a></td>
-<td><div class=cve_sev>HIGH*<span class=cve_sev_note>Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
+<td><div class="cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
 <td>affected</td>
 <td></td>
 <td>gobinary</td>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/local-path-provisioner</td>
 <td>stdlib@v1.25.5</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-61730.html">CVE-2025-61730</a></td>
-<td><div class=cve_sev>LOW*<span class=cve_sev_note>Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
+<td><div class="cve_sev">LOW*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
 <td>affected</td>
 <td></td>
 <td>gobinary</td>
 </tr>
-
 <tr class="issue not_affected">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
+<td>rancher/k3s:v1.35.2-k3s1</td>
+<td>K3s v1.35.2</td>
+<td>bin/containerd-shim-runc-v2</td>
+<td>github.com/containerd/containerd/v2@v2.1.5-k3s1</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2024-25621.html">CVE-2024-25621</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.35.2-k3s1</td>
+<td>K3s v1.35.2</td>
 <td>bin/k3s</td>
-<td>go.opentelemetry.io/otel/sdk@v1.38.0</td>
+<td>go.opentelemetry.io/otel/sdk@v1.39.0</td>
 <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24051">CVE-2026-24051</a></td>
 <td>none</td>
 <td>not affected</td>
@@ -229,74 +218,8 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.28.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2024-45337.html">CVE-2024-45337</a></td>
-<td>none</td>
-<td>not affected</td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.28.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2025-22869.html">CVE-2025-22869</a></td>
-<td>none</td>
-<td>not affected</td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.28.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2025-47914.html">CVE-2025-47914</a></td>
-<td>none</td>
-<td>not affected</td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.28.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2025-58181.html">CVE-2025-58181</a></td>
-<td>none</td>
-<td>not affected</td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/k3s</td>
-<td>gopkg.in/square/go-jose.v2@v2.6.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2024-28180.html">CVE-2024-28180</a></td>
-<td>none</td>
-<td>not affected</td>
-<td>vulnerable code not in execute path</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.32.12-k3s1</td>
-<td>K3s v1.32.12</td>
-<td>bin/runc</td>
-<td>stdlib@v1.24.12</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2025-68121.html">CVE-2025-68121</a></td>
-<td>none</td>
-<td>not affected</td>
-<td>vulnerable code not in execute path</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.9.14-build20260210</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/helm</td>
 <td>stdlib@v1.24.11</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-68121.html">CVE-2025-68121</a></td>
@@ -307,7 +230,7 @@ to its severity.</li>
 </tr>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.9.14-build20260210</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/helm</td>
 <td>stdlib@v1.24.11</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-61728.html">CVE-2025-61728</a></td>
@@ -318,7 +241,7 @@ to its severity.</li>
 </tr>
 <tr class="issue not_affected">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/local-path-provisioner</td>
 <td>stdlib@v1.25.5</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-61726.html">CVE-2025-61726</a></td>
@@ -329,7 +252,7 @@ to its severity.</li>
 </tr>
 <tr class="issue not_affected">
 <td>rancher/local-path-provisioner:v0.0.34</td>
-<td>K3s v1.32.12</td>
+<td>K3s v1.35.2</td>
 <td>usr/bin/local-path-provisioner</td>
 <td>stdlib@v1.25.5</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-61728.html">CVE-2025-61728</a></td>
@@ -338,17 +261,20 @@ to its severity.</li>
 <td>vulnerable code not present</td>
 <td>gobinary</td>
 </tr>
-
 </table>
 
 <footer>
-<p>Note: This page uses embedded JavaScript for filtering and search
-functionalities. If support to JavaScript is disabled in your browser, the page
-will still be usable,but those functions will not work as expected. No external
-code or dependencies are imported by this page.</p>
-<p><b>The K3s CVE data is provided by the K3s team under the Creative Commons
+<p>
+Note: This page uses embedded JavaScript for filtering and search
+functionalities. If JavaScript support is disabled in your browser, the page
+will still be usable,<br>but those functions will not work as expected. No external
+code or dependencies are imported by this page.
+</p>
+<p><b>
+The K3s CVE data is provided by the K3s team under the Creative Commons
 license with Attribution (CC-BY-4.0). See the <a
-href="https://github.com/k3s-io/scans/blob/main/LICENSE">license</a> for more information.</b></p>
+href="https://github.com/k3s-io/scans/blob/main/LICENSE">license</a> for more information.
+</b></p>
 </footer>
 
 <script>
@@ -399,6 +325,7 @@ function search() {
         searchCount.textContent = "Found " + found + " results";
     }
 }
+
 </script>
 <script>
 let lastColumn = 0
@@ -436,6 +363,7 @@ function merge(left, right, col) {
     }
     return [...arr, ...left, ...right]
 }
+
 </script>
 
 </body>
