@@ -25,7 +25,7 @@ td { padding: 7px; }
 </style>
 </head>
 <body>
-<h1>K3s v1.32.13 - CVE Scans - 2026-04-10</h1>
+<h1>K3s v1.32.13 - CVE Scans - 2026-04-11</h1>
 
 <h3>How to use this page</h3>
 
@@ -81,17 +81,6 @@ to its severity.</li>
 <td>stdlib@v1.24.13</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-25679.html">CVE-2026-25679</a></td>
 <td><div class="cve_sev">LOW*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
-<td>affected</td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/k3s:v1.32.13-k3s1</td>
-<td>K3s v1.32.13</td>
-<td>bin/containerd-shim-runc-v2</td>
-<td>google.golang.org/grpc@v1.73.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-33186.html">CVE-2026-33186</a></td>
-<td><div class="cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
 <td>affected</td>
 <td></td>
 <td>gobinary</td>
@@ -210,17 +199,6 @@ to its severity.</li>
 <td>rancher/k3s:v1.32.13-k3s1</td>
 <td>K3s v1.32.13</td>
 <td>bin/k3s</td>
-<td>go.opentelemetry.io/otel/sdk@v1.39.0</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39883">CVE-2026-39883</a></td>
-<td>HIGH</td>
-<td>affected</td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/k3s:v1.32.13-k3s1</td>
-<td>K3s v1.32.13</td>
-<td>bin/k3s</td>
 <td>google.golang.org/grpc@v1.72.1</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-33186.html">CVE-2026-33186</a></td>
 <td><div class="cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></div></td>
@@ -238,6 +216,28 @@ to its severity.</li>
 <td>affected</td>
 <td></td>
 <td>gobinary</td>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-helm:v0.9.14-build20260210</td>
+<td>K3s v1.32.13</td>
+<td>libcrypto3</td>
+<td>libcrypto3@3.5.5-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-28390.html">CVE-2026-28390</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>alpine</td>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-helm:v0.9.14-build20260210</td>
+<td>K3s v1.32.13</td>
+<td>libssl3</td>
+<td>libssl3@3.5.5-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-28390.html">CVE-2026-28390</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>alpine</td>
 </tr>
 <tr class="issue">
 <td>rancher/klipper-helm:v0.9.14-build20260210</td>
@@ -306,6 +306,28 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue">
+<td>rancher/klipper-lb:v0.4.14</td>
+<td>K3s v1.32.13</td>
+<td>libcrypto3</td>
+<td>libcrypto3@3.5.5-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-28390.html">CVE-2026-28390</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>alpine</td>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-lb:v0.4.14</td>
+<td>K3s v1.32.13</td>
+<td>libssl3</td>
+<td>libssl3@3.5.5-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-28390.html">CVE-2026-28390</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>alpine</td>
+</tr>
+<tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
 <td>K3s v1.32.13</td>
 <td>libcrypto3</td>
@@ -341,6 +363,17 @@ to its severity.</li>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.34</td>
 <td>K3s v1.32.13</td>
+<td>libcrypto3</td>
+<td>libcrypto3@3.5.4-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-28390.html">CVE-2026-28390</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>alpine</td>
+</tr>
+<tr class="issue">
+<td>rancher/local-path-provisioner:v0.0.34</td>
+<td>K3s v1.32.13</td>
 <td>libssl3</td>
 <td>libssl3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-15467.html">CVE-2025-15467</a></td>
@@ -366,6 +399,17 @@ to its severity.</li>
 <td>libssl3</td>
 <td>libssl3@3.5.4-r0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2025-69421.html">CVE-2025-69421</a></td>
+<td>HIGH</td>
+<td>affected</td>
+<td></td>
+<td>alpine</td>
+</tr>
+<tr class="issue">
+<td>rancher/local-path-provisioner:v0.0.34</td>
+<td>K3s v1.32.13</td>
+<td>libssl3</td>
+<td>libssl3@3.5.4-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-28390.html">CVE-2026-28390</a></td>
 <td>HIGH</td>
 <td>affected</td>
 <td></td>
@@ -407,6 +451,17 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/k3s:v1.32.13-k3s1</td>
 <td>K3s v1.32.13</td>
+<td>bin/containerd-shim-runc-v2</td>
+<td>google.golang.org/grpc@v1.73.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-33186.html">CVE-2026-33186</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.32.13-k3s1</td>
+<td>K3s v1.32.13</td>
 <td>bin/k3s</td>
 <td>github.com/buger/jsonparser@v1.1.1</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-32285.html">CVE-2026-32285</a></td>
@@ -432,6 +487,17 @@ to its severity.</li>
 <td>bin/k3s</td>
 <td>go.opentelemetry.io/otel/sdk@v1.39.0</td>
 <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24051">CVE-2026-24051</a></td>
+<td>none</td>
+<td>not affected</td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.32.13-k3s1</td>
+<td>K3s v1.32.13</td>
+<td>bin/k3s</td>
+<td>go.opentelemetry.io/otel/sdk@v1.39.0</td>
+<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39883">CVE-2026-39883</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not present</td>
@@ -519,7 +585,7 @@ to its severity.</li>
 <td>K3s v1.32.13</td>
 <td>bin/runc</td>
 <td>stdlib@v1.24.13</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32281">CVE-2026-32281</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-32281.html">CVE-2026-32281</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not in execute path</td>
@@ -530,7 +596,7 @@ to its severity.</li>
 <td>K3s v1.32.13</td>
 <td>bin/runc</td>
 <td>stdlib@v1.24.13</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32288">CVE-2026-32288</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-32288.html">CVE-2026-32288</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not present</td>
@@ -541,7 +607,7 @@ to its severity.</li>
 <td>K3s v1.32.13</td>
 <td>bin/runc</td>
 <td>stdlib@v1.24.13</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32289">CVE-2026-32289</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-32289.html">CVE-2026-32289</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not present</td>
@@ -585,7 +651,7 @@ to its severity.</li>
 <td>K3s v1.32.13</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
 <td>stdlib@v1.25.7</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32288">CVE-2026-32288</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-32288.html">CVE-2026-32288</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not in execute path</td>
@@ -596,7 +662,7 @@ to its severity.</li>
 <td>K3s v1.32.13</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
 <td>stdlib@v1.25.7</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32289">CVE-2026-32289</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-32289.html">CVE-2026-32289</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not in execute path</td>
@@ -695,7 +761,7 @@ to its severity.</li>
 <td>K3s v1.32.13</td>
 <td>usr/bin/local-path-provisioner</td>
 <td>stdlib@v1.25.5</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32288">CVE-2026-32288</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-32288.html">CVE-2026-32288</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not present</td>
@@ -706,7 +772,7 @@ to its severity.</li>
 <td>K3s v1.32.13</td>
 <td>usr/bin/local-path-provisioner</td>
 <td>stdlib@v1.25.5</td>
-<td><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32289">CVE-2026-32289</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-32289.html">CVE-2026-32289</a></td>
 <td>none</td>
 <td>not affected</td>
 <td>vulnerable code not present</td>
