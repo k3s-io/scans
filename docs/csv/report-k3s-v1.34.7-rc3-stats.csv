@@ -1,5 +1,5 @@
 image,critical,high,total
-rancher/k3s:v1.34.7-rc2-k3s1,0,1,1
-rancher/klipper-helm:v0.9.15-build20260324,0,7,7
+rancher/k3s:v1.34.7-rc3-k3s1,0,1,1
+rancher/klipper-helm:v0.9.17-build20260422,0,0,0
 rancher/klipper-lb:v0.4.15,0,4,4
 rancher/local-path-provisioner:v0.0.35,0,5,5
