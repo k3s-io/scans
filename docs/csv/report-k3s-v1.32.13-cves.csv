@@ -10,6 +10,7 @@ rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,github.com/nats-io/nats-server/v2,v2.12.2
 rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,github.com/nats-io/nats-server/v2,v2.12.2,gobinary,CVE-2026-33217,HIGH,https://avd.aquasec.com/nvd/cve-2026-33217,bin/k3s,"2.11.15, 2.12.6",false,affected,
 rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,github.com/nats-io/nats-server/v2,v2.12.2,gobinary,CVE-2026-33218,HIGH,https://avd.aquasec.com/nvd/cve-2026-33218,bin/k3s,"2.11.15, 2.12.6",false,affected,
 rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,github.com/nats-io/nats-server/v2,v2.12.2,gobinary,CVE-2026-33247,HIGH,https://avd.aquasec.com/nvd/cve-2026-33247,bin/k3s,"2.11.15, 2.12.6",false,affected,
+rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,go.opentelemetry.io/otel,v1.39.0,gobinary,CVE-2026-29181,HIGH,https://avd.aquasec.com/nvd/cve-2026-29181,bin/k3s,1.41.0,false,affected,
 rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,stdlib,v1.24.13,gobinary,CVE-2026-32280,HIGH,https://avd.aquasec.com/nvd/cve-2026-32280,bin/k3s,"1.25.9, 1.26.2",false,affected,
 rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,github.com/buger/jsonparser,v1.1.1,gobinary,CVE-2026-32285,HIGH,https://avd.aquasec.com/nvd/cve-2026-32285,bin/k3s,1.1.2,false,not_affected,vulnerable_code_not_in_execute_path
 rancher/k3s:v1.32.13-k3s1,k3s/v1.32.13,github.com/docker/cli,v28.3.2+incompatible,gobinary,CVE-2025-15558,HIGH,https://avd.aquasec.com/nvd/cve-2025-15558,bin/k3s,29.2.0,false,not_affected,vulnerable_code_not_present
