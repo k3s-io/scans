@@ -13,6 +13,7 @@ rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,stdlib,v1.26.2,gobinary,CVE-2026-42
 rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,github.com/docker/docker,v25.0.15-0.20260325154711-d2dbc0547253+incompatible,gobinary,CVE-2026-34040,HIGH,https://avd.aquasec.com/nvd/cve-2026-34040,bin/k3s,29.3.1,false,affected,
 rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,github.com/docker/docker,v25.0.15-0.20260325154711-d2dbc0547253+incompatible,gobinary,CVE-2026-41567,HIGH,https://avd.aquasec.com/nvd/cve-2026-41567,bin/k3s,,false,affected,
 rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,github.com/docker/docker,v25.0.15-0.20260325154711-d2dbc0547253+incompatible,gobinary,CVE-2026-42306,HIGH,https://avd.aquasec.com/nvd/cve-2026-42306,bin/k3s,,false,affected,
+rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,github.com/docker/docker,v25.0.15-0.20260325154711-d2dbc0547253+incompatible,gobinary,CVE-2026-33997,HIGH,https://avd.aquasec.com/nvd/cve-2026-33997,bin/k3s,29.3.1,false,affected,severity_changed_due_to_suse_cvss_score
 rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,stdlib,v1.26.2,gobinary,CVE-2026-33814,HIGH,https://avd.aquasec.com/nvd/cve-2026-33814,bin/k3s,"1.25.10, 1.26.3",false,affected,
 rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,stdlib,v1.26.2,gobinary,CVE-2026-39820,HIGH,https://avd.aquasec.com/nvd/cve-2026-39820,bin/k3s,"1.25.10, 1.26.3",false,affected,
 rancher/k3s:v1.36.1-rc1-k3s1,k3s/v1.36.1-rc1,stdlib,v1.26.2,gobinary,CVE-2026-39836,HIGH,https://avd.aquasec.com/nvd/cve-2026-39836,bin/k3s,"1.25.10, 1.26.3",false,affected,
