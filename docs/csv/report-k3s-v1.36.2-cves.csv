@@ -1,5 +1,6 @@
 image,release,package_name,package_version,type,vulnerability_id,severity,url,target,patched_version,mirrored,status,justification
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,stdlib,v1.26.4,gobinary,CVE-2026-39822,HIGH,https://avd.aquasec.com/nvd/cve-2026-39822,bin/cni,"1.25.12, 1.26.5, 1.27.0-rc.2",false,affected,
+rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,google.golang.org/grpc,v1.80.0,gobinary,GHSA-hrxh-6v49-42gf,HIGH,https://github.com/advisories/GHSA-hrxh-6v49-42gf,bin/containerd-shim-runc-v2,1.82.1,false,affected,
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,github.com/containerd/containerd/v2,v2.3.2-k3s2,gobinary,CVE-2026-53488,HIGH,https://avd.aquasec.com/nvd/cve-2026-53488,bin/containerd-shim-runc-v2,"2.0.10, 2.1.9, 2.2.5, 2.3.2",false,not_affected,vulnerable_code_not_present
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,github.com/containerd/containerd/v2,v2.3.2-k3s2,gobinary,CVE-2026-53489,HIGH,https://avd.aquasec.com/nvd/cve-2026-53489,bin/containerd-shim-runc-v2,"2.1.9, 2.2.5, 2.3.2",false,not_affected,vulnerable_code_not_present
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,github.com/containerd/containerd/v2,v2.3.2-k3s2,gobinary,CVE-2026-53492,HIGH,https://avd.aquasec.com/nvd/cve-2026-53492,bin/containerd-shim-runc-v2,"2.1.9, 2.2.5, 2.3.2",false,not_affected,vulnerable_code_not_present
@@ -8,6 +9,7 @@ rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,github.com/docker/docker,v25.0.15-0.2026032
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,github.com/docker/docker,v25.0.15-0.20260325154711-d2dbc0547253+incompatible,gobinary,CVE-2026-41567,HIGH,https://avd.aquasec.com/nvd/cve-2026-41567,bin/k3s,,false,affected,
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,github.com/docker/docker,v25.0.15-0.20260325154711-d2dbc0547253+incompatible,gobinary,CVE-2026-42306,HIGH,https://avd.aquasec.com/nvd/cve-2026-42306,bin/k3s,,false,affected,
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,github.com/docker/docker,v25.0.15-0.20260325154711-d2dbc0547253+incompatible,gobinary,CVE-2026-33997,HIGH,https://avd.aquasec.com/nvd/cve-2026-33997,bin/k3s,29.3.1,false,affected,severity_changed_due_to_suse_cvss_score
+rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,google.golang.org/grpc,v1.79.3,gobinary,GHSA-hrxh-6v49-42gf,HIGH,https://github.com/advisories/GHSA-hrxh-6v49-42gf,bin/k3s,1.82.1,false,affected,
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,golang.org/x/crypto,v0.47.0,gobinary,CVE-2026-39828,HIGH,https://avd.aquasec.com/nvd/cve-2026-39828,bin/k3s,0.52.0,false,not_affected,vulnerable_code_not_present
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,golang.org/x/crypto,v0.47.0,gobinary,CVE-2026-39829,HIGH,https://avd.aquasec.com/nvd/cve-2026-39829,bin/k3s,0.52.0,false,not_affected,vulnerable_code_not_present
 rancher/k3s:v1.36.2-k3s1,k3s/v1.36.2,golang.org/x/crypto,v0.47.0,gobinary,CVE-2026-39830,HIGH,https://avd.aquasec.com/nvd/cve-2026-39830,bin/k3s,0.52.0,false,not_affected,vulnerable_code_not_present
