@@ -500,21 +500,10 @@ to its severity.</li>
 <tr class="issue">
 <td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>bin/cni</td>
-<td>stdlib@v1.26.4</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
-<td><span class="sev sev-HIGH">HIGH</span></td>
-<td><span class="status status-affected">affected</span></td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/containerd-shim-runc-v2</td>
-<td>google.golang.org/grpc@v1.80.0</td>
-<td><a href="https://github.com/advisories/GHSA-hrxh-6v49-42gf">GHSA-hrxh-6v49-42gf</a></td>
-<td><span class="sev sev-HIGH">HIGH</span></td>
+<td>bin/k3s</td>
+<td>github.com/docker/docker@v25.0.15-0.20260325154711-d2dbc0547253+incompatible</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-33997.html">CVE-2026-33997</a></td>
+<td><span class="sev sev-HIGH cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></span></td>
 <td><span class="status status-affected">affected</span></td>
 <td></td>
 <td>gobinary</td>
@@ -525,6 +514,17 @@ to its severity.</li>
 <td>bin/k3s</td>
 <td>github.com/docker/docker@v25.0.15-0.20260325154711-d2dbc0547253+incompatible</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-34040.html">CVE-2026-34040</a></td>
+<td><span class="sev sev-HIGH">HIGH</span></td>
+<td><span class="status status-affected">affected</span></td>
+<td></td>
+<td>gobinary</td>
+</tr>
+<tr class="issue">
+<td>rancher/k3s:v1.36.2-k3s1</td>
+<td>K3s v1.36.2</td>
+<td>bin/cni</td>
+<td>stdlib@v1.26.4</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
 <td><span class="sev sev-HIGH">HIGH</span></td>
 <td><span class="status status-affected">affected</span></td>
 <td></td>
@@ -556,9 +556,9 @@ to its severity.</li>
 <td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
 <td>bin/k3s</td>
-<td>github.com/docker/docker@v25.0.15-0.20260325154711-d2dbc0547253+incompatible</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-33997.html">CVE-2026-33997</a></td>
-<td><span class="sev sev-HIGH cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></span></td>
+<td>google.golang.org/grpc@v1.79.3</td>
+<td><a href="https://github.com/advisories/GHSA-hrxh-6v49-42gf">GHSA-hrxh-6v49-42gf</a></td>
+<td><span class="sev sev-HIGH">HIGH</span></td>
 <td><span class="status status-affected">affected</span></td>
 <td></td>
 <td>gobinary</td>
@@ -566,8 +566,8 @@ to its severity.</li>
 <tr class="issue">
 <td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>google.golang.org/grpc@v1.79.3</td>
+<td>bin/containerd-shim-runc-v2</td>
+<td>google.golang.org/grpc@v1.80.0</td>
 <td><a href="https://github.com/advisories/GHSA-hrxh-6v49-42gf">GHSA-hrxh-6v49-42gf</a></td>
 <td><span class="sev sev-HIGH">HIGH</span></td>
 <td><span class="status status-affected">affected</span></td>
@@ -588,6 +588,28 @@ to its severity.</li>
 <tr class="issue">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
+<td>golang.org/x/net@v0.49.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-33814.html">CVE-2026-33814</a></td>
+<td><span class="sev sev-HIGH">HIGH</span></td>
+<td><span class="status status-affected">affected</span></td>
+<td></td>
+<td>gobinary</td>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/net@v0.49.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-33814.html">CVE-2026-33814</a></td>
+<td><span class="sev sev-HIGH">HIGH</span></td>
+<td><span class="status status-affected">affected</span></td>
+<td></td>
+<td>gobinary</td>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
 <td>golang.org/x/net@v0.49.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39821.html">CVE-2026-39821</a></td>
@@ -600,19 +622,8 @@ to its severity.</li>
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39834.html">CVE-2026-39834</a></td>
-<td><span class="sev sev-HIGH cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></span></td>
-<td><span class="status status-affected">affected</span></td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>golang.org/x/net@v0.49.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-33814.html">CVE-2026-33814</a></td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39821.html">CVE-2026-39821</a></td>
 <td><span class="sev sev-HIGH">HIGH</span></td>
 <td><span class="status status-affected">affected</span></td>
 <td></td>
@@ -621,7 +632,7 @@ to its severity.</li>
 <tr class="issue">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
+<td>usr/bin/helm</td>
 <td>golang.org/x/net@v0.49.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39821.html">CVE-2026-39821</a></td>
 <td><span class="sev sev-HIGH">HIGH</span></td>
@@ -644,6 +655,17 @@ to its severity.</li>
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
 <td>usr/bin/helm</td>
+<td>stdlib@v1.25.11</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
+<td><span class="sev sev-HIGH">HIGH</span></td>
+<td><span class="status status-affected">affected</span></td>
+<td></td>
+<td>gobinary</td>
+</tr>
+<tr class="issue">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39834.html">CVE-2026-39834</a></td>
 <td><span class="sev sev-HIGH cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></span></td>
@@ -655,56 +677,12 @@ to its severity.</li>
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
 <td>usr/bin/helm</td>
-<td>golang.org/x/net@v0.49.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-33814.html">CVE-2026-33814</a></td>
-<td><span class="sev sev-HIGH">HIGH</span></td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39834.html">CVE-2026-39834</a></td>
+<td><span class="sev sev-HIGH cve_sev">HIGH*<span class="cve_sev_note">Severity modified based on SUSE's CVE database and CVSS rating</span></span></td>
 <td><span class="status status-affected">affected</span></td>
 <td></td>
 <td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/net@v0.49.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39821.html">CVE-2026-39821</a></td>
-<td><span class="sev sev-HIGH">HIGH</span></td>
-<td><span class="status status-affected">affected</span></td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>stdlib@v1.25.11</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
-<td><span class="sev sev-HIGH">HIGH</span></td>
-<td><span class="status status-affected">affected</span></td>
-<td></td>
-<td>gobinary</td>
-</tr>
-<tr class="issue">
-<td>rancher/local-path-provisioner:v0.0.36</td>
-<td>K3s v1.36.2</td>
-<td>libcrypto3</td>
-<td>libcrypto3@3.5.6-r0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-45447.html">CVE-2026-45447</a></td>
-<td><span class="sev sev-HIGH">HIGH</span></td>
-<td><span class="status status-affected">affected</span></td>
-<td></td>
-<td>alpine</td>
-</tr>
-<tr class="issue">
-<td>rancher/local-path-provisioner:v0.0.36</td>
-<td>K3s v1.36.2</td>
-<td>libssl3</td>
-<td>libssl3@3.5.6-r0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-45447.html">CVE-2026-45447</a></td>
-<td><span class="sev sev-HIGH">HIGH</span></td>
-<td><span class="status status-affected">affected</span></td>
-<td></td>
-<td>alpine</td>
 </tr>
 <tr class="issue">
 <td>rancher/local-path-provisioner:v0.0.36</td>
@@ -838,159 +816,27 @@ to its severity.</li>
 <td></td>
 <td>gobinary</td>
 </tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
+<tr class="issue">
+<td>rancher/local-path-provisioner:v0.0.36</td>
 <td>K3s v1.36.2</td>
-<td>bin/containerd-shim-runc-v2</td>
-<td>github.com/containerd/containerd/v2@v2.3.2-k3s2</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-53488.html">CVE-2026-53488</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
+<td>libcrypto3</td>
+<td>libcrypto3@3.5.6-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-45447.html">CVE-2026-45447</a></td>
+<td><span class="sev sev-HIGH">HIGH</span></td>
+<td><span class="status status-affected">affected</span></td>
+<td></td>
+<td>alpine</td>
 </tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
+<tr class="issue">
+<td>rancher/local-path-provisioner:v0.0.36</td>
 <td>K3s v1.36.2</td>
-<td>bin/containerd-shim-runc-v2</td>
-<td>github.com/containerd/containerd/v2@v2.3.2-k3s2</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-53489.html">CVE-2026-53489</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/containerd-shim-runc-v2</td>
-<td>github.com/containerd/containerd/v2@v2.3.2-k3s2</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-53492.html">CVE-2026-53492</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/containerd-shim-runc-v2</td>
-<td>stdlib@v1.26.4</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not in execute path</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39828.html">CVE-2026-39828</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39829.html">CVE-2026-39829</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39830.html">CVE-2026-39830</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39831.html">CVE-2026-39831</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39832.html">CVE-2026-39832</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39835.html">CVE-2026-39835</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-42508.html">CVE-2026-42508</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-46595.html">CVE-2026-46595</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-46597.html">CVE-2026-46597</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/k3s:v1.36.2-k3s1</td>
-<td>K3s v1.36.2</td>
-<td>bin/k3s</td>
-<td>stdlib@v1.26.4</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not in execute path</td>
-<td>gobinary</td>
+<td>libssl3</td>
+<td>libssl3@3.5.6-r0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-45447.html">CVE-2026-45447</a></td>
+<td><span class="sev sev-HIGH">HIGH</span></td>
+<td><span class="status status-affected">affected</span></td>
+<td></td>
+<td>alpine</td>
 </tr>
 <tr class="issue not_affected">
 <td>rancher/k3s:v1.36.2-k3s1</td>
@@ -1039,6 +885,28 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
+<td>bin/containerd-shim-runc-v2</td>
+<td>stdlib@v1.26.4</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not in execute path</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.36.2-k3s1</td>
+<td>K3s v1.36.2</td>
+<td>bin/k3s</td>
+<td>stdlib@v1.26.4</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not in execute path</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.36.2-k3s1</td>
+<td>K3s v1.36.2</td>
 <td>bin/runc</td>
 <td>stdlib@v1.26.4</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39822.html">CVE-2026-39822</a></td>
@@ -1048,9 +916,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39828.html">CVE-2026-39828</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1059,9 +927,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39829.html">CVE-2026-39829</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1070,9 +938,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39830.html">CVE-2026-39830</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1081,9 +949,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39831.html">CVE-2026-39831</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1092,9 +960,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39832.html">CVE-2026-39832</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1103,9 +971,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39835.html">CVE-2026-39835</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1114,9 +982,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-42508.html">CVE-2026-42508</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1125,9 +993,9 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-46595.html">CVE-2026-46595</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1136,11 +1004,44 @@ to its severity.</li>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>rancher/k3s:v1.36.2-k3s1</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>bin/k3s</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-46597.html">CVE-2026-46597</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.36.2-k3s1</td>
+<td>K3s v1.36.2</td>
+<td>bin/containerd-shim-runc-v2</td>
+<td>github.com/containerd/containerd/v2@v2.3.2-k3s2</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-53488.html">CVE-2026-53488</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.36.2-k3s1</td>
+<td>K3s v1.36.2</td>
+<td>bin/containerd-shim-runc-v2</td>
+<td>github.com/containerd/containerd/v2@v2.3.2-k3s2</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-53489.html">CVE-2026-53489</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/k3s:v1.36.2-k3s1</td>
+<td>K3s v1.36.2</td>
+<td>bin/containerd-shim-runc-v2</td>
+<td>github.com/containerd/containerd/v2@v2.3.2-k3s2</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-53492.html">CVE-2026-53492</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not present</td>
@@ -1150,6 +1051,28 @@ to its severity.</li>
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/net@v0.49.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-25681.html">CVE-2026-25681</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
+<td>golang.org/x/net@v0.49.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-25681.html">CVE-2026-25681</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
 <td>golang.org/x/net@v0.49.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-25681.html">CVE-2026-25681</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1171,23 +1094,23 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
-<td>oras.land/oras-go/v2@v2.6.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-50151.html">CVE-2026-50151</a></td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
+<td>golang.org/x/net@v0.49.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-27136.html">CVE-2026-27136</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not in execute path</td>
+<td>vulnerable code not present</td>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
-<td>oras.land/oras-go/v2@v2.6.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-50163.html">CVE-2026-50163</a></td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/net@v0.49.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-27136.html">CVE-2026-27136</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not in execute path</td>
+<td>vulnerable code not present</td>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
@@ -1204,9 +1127,42 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39828.html">CVE-2026-39828</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39828.html">CVE-2026-39828</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39828.html">CVE-2026-39828</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39829.html">CVE-2026-39829</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not present</td>
@@ -1226,9 +1182,53 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39829.html">CVE-2026-39829</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39830.html">CVE-2026-39830</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39830.html">CVE-2026-39830</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39830.html">CVE-2026-39830</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39831.html">CVE-2026-39831</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not present</td>
@@ -1248,9 +1248,53 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39831.html">CVE-2026-39831</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39832.html">CVE-2026-39832</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-39832.html">CVE-2026-39832</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39832.html">CVE-2026-39832</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39835.html">CVE-2026-39835</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not present</td>
@@ -1270,9 +1314,53 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-39835.html">CVE-2026-39835</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-42508.html">CVE-2026-42508</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-42508.html">CVE-2026-42508</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-42508.html">CVE-2026-42508</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-46595.html">CVE-2026-46595</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not present</td>
@@ -1292,7 +1380,18 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-46595.html">CVE-2026-46595</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
 <td>golang.org/x/crypto@v0.47.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-46597.html">CVE-2026-46597</a></td>
 <td><span class="sev sev-NONE">none</span></td>
@@ -1304,8 +1403,8 @@ to its severity.</li>
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
-<td>golang.org/x/net@v0.49.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-25681.html">CVE-2026-25681</a></td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-46597.html">CVE-2026-46597</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not present</td>
@@ -1314,12 +1413,23 @@ to its severity.</li>
 <tr class="issue not_affected">
 <td>rancher/klipper-helm:v0.11.1-build20260615</td>
 <td>K3s v1.36.2</td>
-<td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
-<td>golang.org/x/net@v0.49.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-27136.html">CVE-2026-27136</a></td>
+<td>usr/bin/helm</td>
+<td>golang.org/x/crypto@v0.47.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-46597.html">CVE-2026-46597</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not present</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>oras.land/oras-go/v2@v2.6.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-50151.html">CVE-2026-50151</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not in execute path</td>
 <td>gobinary</td>
 </tr>
 <tr class="issue not_affected">
@@ -1328,6 +1438,28 @@ to its severity.</li>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>oras.land/oras-go/v2@v2.6.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-50151.html">CVE-2026-50151</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not in execute path</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>usr/bin/helm</td>
+<td>oras.land/oras-go/v2@v2.6.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-50151.html">CVE-2026-50151</a></td>
+<td><span class="sev sev-NONE">none</span></td>
+<td><span class="status status-clear">not affected</span></td>
+<td>vulnerable code not in execute path</td>
+<td>gobinary</td>
+</tr>
+<tr class="issue not_affected">
+<td>rancher/klipper-helm:v0.11.1-build20260615</td>
+<td>K3s v1.36.2</td>
+<td>home/klipper-helm/.local/share/helm/plugins/helm-mapkubeapis/bin/mapkubeapis</td>
+<td>oras.land/oras-go/v2@v2.6.0</td>
+<td><a href="https://www.suse.com/security/cve/CVE-2026-50163.html">CVE-2026-50163</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not in execute path</td>
@@ -1339,138 +1471,6 @@ to its severity.</li>
 <td>home/klipper-helm/.local/share/helm/plugins/helm-set-status/helm-set-status</td>
 <td>oras.land/oras-go/v2@v2.6.0</td>
 <td><a href="https://www.suse.com/security/cve/CVE-2026-50163.html">CVE-2026-50163</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not in execute path</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39828.html">CVE-2026-39828</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39829.html">CVE-2026-39829</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39830.html">CVE-2026-39830</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39831.html">CVE-2026-39831</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39832.html">CVE-2026-39832</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-39835.html">CVE-2026-39835</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-42508.html">CVE-2026-42508</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-46595.html">CVE-2026-46595</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/crypto@v0.47.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-46597.html">CVE-2026-46597</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/net@v0.49.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-25681.html">CVE-2026-25681</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>golang.org/x/net@v0.49.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-27136.html">CVE-2026-27136</a></td>
-<td><span class="sev sev-NONE">none</span></td>
-<td><span class="status status-clear">not affected</span></td>
-<td>vulnerable code not present</td>
-<td>gobinary</td>
-</tr>
-<tr class="issue not_affected">
-<td>rancher/klipper-helm:v0.11.1-build20260615</td>
-<td>K3s v1.36.2</td>
-<td>usr/bin/helm</td>
-<td>oras.land/oras-go/v2@v2.6.0</td>
-<td><a href="https://www.suse.com/security/cve/CVE-2026-50151.html">CVE-2026-50151</a></td>
 <td><span class="sev sev-NONE">none</span></td>
 <td><span class="status status-clear">not affected</span></td>
 <td>vulnerable code not in execute path</td>
